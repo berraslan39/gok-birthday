@@ -20,7 +20,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     items.forEach(item => {
         item.addEventListener('click', () => {
-            infoBox.textContent = item.dataset.info;   // show text
+            const text = item.dataset.info;
+            const link = item.dataset.link;
+
+            if (link) {
+                infoBox.innerHTML = `<a href="${link}" target="_blank">${text}</a>`;
+            } else {
+                infoBox.textContent = text;
+            }
+
             infoBox.style.display = 'block';
         });
     });

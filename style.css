@@ -23,6 +23,11 @@ body {
     color: rgb(136, 54, 54);
     text-align: center;
 }
+#info-box a {
+  color: #6a4343;
+  font-weight: bold;
+  text-decoration: underline;
+}
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
